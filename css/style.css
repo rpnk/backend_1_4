@@ -1,0 +1,152 @@
+header span{
+  align-self: center;
+}
+
+.book-info img, .author-info img {
+  width: 200px;
+  height: 300px;
+  border: 3px solid #8B4513; 
+  float: left;
+  margin-bottom: 20px;
+}
+
+h4 {
+  text-align: right;
+  font-size: 12px;
+  color: green;
+  text-decoration: underline;
+  margin-bottom: 5px; 
+}
+
+a:hover {
+  color: red;
+  text-decoration: none; 
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #333;
+  margin: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #eeeeeece;
+  }
+
+  p {
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+  
+.book-info h2,
+.author-info p {
+    font-style: italic; 
+}
+
+.author-info p a,
+.book-info h2 a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.author-info p a:hover,
+.book-info h2 a:hover {
+    text-decoration: underline;
+}
+
+.chapters h2 {
+  text-transform: uppercase;
+  color: red; 
+}
+
+  
+    
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  
+  header .login-register {
+    float: right;
+  }
+  
+  header .login-register a {
+    margin-left: 10px;
+  }
+  
+  .post img {
+    float: left;
+    margin-right: 20px;
+  }
+  .post {
+    border: rgb(0, 0, 0);
+    border-style: solid;
+    margin: 3px;
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+  }
+  
+  .post h3 {
+    text-align: right;
+  }
+  .post h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  main{
+    padding-bottom: 100px;
+  }
+
+
+  footer {
+    margin-top: 20px;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  
+  
+  .registration-cssave form {
+    max-width: 800px;
+    padding:100px 550px;
+    position:center;
+}
+  
+
+  
+  .registration-cssave .item {
+    border-radius:10px;
+    margin-bottom:25px;
+    padding:10px 20px;
+  }
+  
+  .registration-cssave .create-account {
+    border-radius:30px;
+    padding:10px 20px;
+    font-size:18px;
+    font-weight:bold;
+    background-color:#000000;
+    border:none;
+    color:white;
+    margin-top:20px;
+  }
+  
