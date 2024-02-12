@@ -31,28 +31,38 @@ header span{
   align-self: center;
 }
 
-.register-form label,
+.form-header {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.form-header h2 {
+  margin: 0;
+  color: azure;
+}
+
+.register-form label{
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 .register-form input,
 .register-form button {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .register-form {
   display: block;
   max-width: min-content;
   margin: 0 auto;
-  padding: 20px;
   border: 2px solid #333;
   border-radius: 10px;
 }
 
-.register-form h2 {
-  text-align: center;
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
 
 .register-form input {
   margin-bottom: 8px;
@@ -71,10 +81,6 @@ header span{
   margin-top: 20px;
 }
 
-.register-form h2 {
-  background: #aee3ff;
-  font-size: 14px;
-}
 
 .book-info img, .author-info img {
   width: 200px;
