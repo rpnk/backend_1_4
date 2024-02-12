@@ -1,3 +1,4 @@
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -11,22 +12,22 @@ header {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 main {
-  flex-grow: 1;
+  flex-grow: 1; 
+  padding: 10px;
 }
 
 footer {
   height: 50px;
   flex-shrink: 0;
-  margin-top: 20px;
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
   text-align: center;
 }
+
 header span{
   align-self: center;
 }
@@ -48,6 +49,9 @@ header span{
   margin-left: 10px;
 }
 
+.register-form select {
+  width: calc(100% - 60px);
+}
 .register-form input,
 .register-form button,
 .register-form select {
@@ -68,7 +72,6 @@ header span{
 
 .register-form input {
   margin-bottom: 8px;
-  padding: 10px; 
   font-size: 12px; 
   max-width: 800px;
 }
@@ -88,10 +91,12 @@ header span{
 .book-info img, .author-info img {
   width: 200px;
   height: 300px;
-  border: 3px solid #8B4513; 
+  border: 3px solid #8B4513;
   float: left;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
+
 
 h4 {
   text-align: right;
@@ -116,13 +121,12 @@ hr {
 }
 
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: #eeeeeece;
-  }
-
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #eeeeeece;
+}
   p {
     margin-left: 20px;
     font-size: 10px;
@@ -151,6 +155,7 @@ body {
 .chapters h2 {
   text-transform: uppercase;
   color: red; 
+
 }
   
   
@@ -205,3 +210,4 @@ body {
     margin-top:20px;
   }
   
+    
