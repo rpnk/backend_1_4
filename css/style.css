@@ -8,7 +8,7 @@
 header {
   height: 20px;
   flex-shrink: 0;
-  background-color: #aee3ff;
+  background-color: #9A998C;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@ main {
 footer {
   height: 50px;
   flex-shrink: 0;
-  background-color: #333;
+  background-color: #0A0908;
   color: #fff;
   padding: 10px 20px;
   text-align: center;
@@ -33,14 +33,14 @@ header span{
 }
 
 .form-header {
-  background-color: #333;
+  background-color: #775B59;
   padding: 20px;
   border-radius: 10px 10px 0 0;
 }
 
 .form-header h2 {
   margin: 0;
-  color: azure;
+  color: #F8F4E3;
 }
 
 .register-form label{
@@ -65,7 +65,7 @@ header span{
   display: block;
   max-width: min-content;
   margin: 0 auto;
-  border: 2px solid #333;
+  border: 2px solid #9A998C;
   border-radius: 10px;
 }
 
@@ -81,9 +81,9 @@ header span{
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
-  background-color: #000000;
+  background-color: #9A998C;
   border: none;
-  color: white;
+  color: #F8F4E3;
   margin-top: 20px;
 }
 
@@ -91,7 +91,7 @@ header span{
 .book-info img, .author-info img {
   width: 200px;
   height: 300px;
-  border: 3px solid #8B4513;
+  border: 3px solid #775B59;
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -101,7 +101,7 @@ header span{
 h4 {
   text-align: right;
   font-size: 12px;
-  color: green;
+  color: #9A998C;
   text-decoration: underline;
   margin-bottom: 5px; 
 }
@@ -114,7 +114,7 @@ a:hover {
 hr {
   border: none;
   height: 2px;
-  background-color: #333;
+  background-color: #0A0908;
   margin: 20px 0;
   width: 100%;
   box-sizing: border-box;
@@ -125,7 +125,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #eeeeeece;
+  background-color: #F8F4E3;
 }
   p {
     margin-left: 20px;
@@ -154,7 +154,7 @@ body {
 
 .chapters h2 {
   text-transform: uppercase;
-  color: red; 
+  color: #F8F4E3; 
 
 }
   
@@ -172,11 +172,11 @@ body {
     margin-right: 20px;
   }
   .post {
-    border: rgb(0, 0, 0);
+    border: #9A998C;
     border-style: solid;
     margin: 3px;
     padding: 20px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #9A998C;
   }
   
   .post h3 {
@@ -204,9 +204,9 @@ body {
     padding:10px 20px;
     font-size:18px;
     font-weight:bold;
-    background-color:#000000;
+    background-color:#9A998C;
     border:none;
-    color:white;
+    color:#F8F4E3;
     margin-top:20px;
   }
   
