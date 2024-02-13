@@ -16,130 +16,165 @@
     </div>
   </header>
   <h1>Git Commands Reference</h1>
-  <table>
-      <thead>
-          <tr>
-              <th>Task</th>
-              <th>Command</th>
-              <th>Description</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td rowspan="2">Create a Repository</td>
-              <td>$ git init [project name]</td>
-              <td>Create a new local repository.</td>
-          </tr>
-          <tr>
-              <td>$ git clone my_url</td>
-              <td>Download from an existing repository.</td>
-          </tr>
-          <tr>
-              <td rowspan="5">Observe your Repository</td>
-              <td>$ git status</td>
-              <td>List new or modified files not yet committed.</td>
-          </tr>
-          <tr>
-              <td>$ git diff</td>
-              <td>Show the changes to files not yet staged.</td>
-          </tr>
-          <tr>
-              <td>$ git diff --cached</td>
-              <td>Show the changes to staged files.</td>
-          </tr>
-          <tr>
-              <td>$ git diff HEAD</td>
-              <td>Show all staged and unstaged file changes.</td>
-          </tr>
-          <tr>
-              <td>$ git diff commit1 commit2</td>
-              <td>Show the changes between two commit IDs.</td>
-          </tr>
-          <tr>
-              <td rowspan="2">Working with Branches</td>
-              <td>$ git branch</td>
-              <td>List all local branches.</td>
-          </tr>
-          <tr>
-              <td>$ git branch -av</td>
-              <td>List all branches, local and remote.</td>
-          </tr>
-          <tr>
-              <td rowspan="4"></td>
-              <td>$ git checkout my_branch</td>
-              <td>Switch to a branch and update working directory.</td>
-          </tr>
-          <tr>
-              <td>$ git branch new_branch</td>
-              <td>Create a new branch.</td>
-          </tr>
-          <tr>
-              <td>$ git branch -d my_branch</td>
-              <td>Delete a branch.</td>
-          </tr>
-          <tr>
-              <td>$ git checkout branch_b; git merge branch_a</td>
-              <td>Merge branch a into branch_b.</td>
-          </tr>
-          <tr>
-              <td>Tag</td>
-              <td>$ git tag my_tag</td>
-              <td>Tag the current commit.</td>
-          </tr>
-          <tr>
-              <td rowspan="5">Make a Change</td>
-              <td>$ git add [file]</td>
-              <td>Stage the file, ready for commit.</td>
-          </tr>
-          <tr>
-              <td>$ git add .</td>
-              <td>Stage all changed files, ready for commit.</td>
-          </tr>
-          <tr>
-              <td>$ git commit -m "commit message"</td>
-              <td>Commit all staged files to versioned history.</td>
-          </tr>
-          <tr>
-              <td>$ git commit -am "commit message"</td>
-              <td>Commit all your tracked files to versioned history.</td>
-          </tr>
-          <tr>
-              <td>$ git reset [file]</td>
-              <td>Unstage file, keeping the file changes.</td>
-          </tr>
-          <tr>
-              <td>Revert</td>
-              <td>$ git reset --hard</td>
-              <td>Revert everything to the last commit.</td>
-          </tr>
-          <tr>
-              <td rowspan="4">Synchronize</td>
-              <td>$ git fetch</td>
-              <td>Get the latest changes from origin (no merge).</td>
-          </tr>
-          <tr>
-              <td>$ git pull</td>
-              <td>Fetch the latest changes from origin and merge.</td>
-          </tr>
-          <tr>
-              <td>$ git pull --rebase</td>
-              <td>Fetch the latest changes from origin and rebase.</td>
-          </tr>
-          <tr>
-              <td>$ git push</td>
-              <td>Push local changes to the origin.</td>
-          </tr>
-          <tr>
-              <td>Help</td>
-              <td>$ git command --help</td>
-              <td>Get help on a specific command.</td>
-          </tr>
-          <tr>
-              <td>More Resources</td>
-              <td colspan="2">https://training.github.com/</td>
-          </tr>
-      </tbody>
-  </table>    <footer>
+
+  <h2>Налаштування інструментарію</h2>
+
+  <table border="1">
+      <tr>
+          <th>Команда</th>
+          <th>Опис</th>
+      </tr>
+      <tr>
+          <td><code>$ git config --global user.name "[ім'я]"</code></td>
+          <td>Встановлює ім’я користувача, що буде вказано для всіх ваших комітів</td>
+      </tr>
+      <tr>
+          <td><code>$ git config --global user.email "[поштова скринька]"</code></td>
+          <td>Встановлює поштову скриньку, що буде вказана для всіх ваших комітів</td>
+      </tr>
+      <tr>
+          <td><code>$ git config --global color.ui auto</code></td>
+          <td>Додає допоміжне забарвлення виводу в командній стрічці</td>
+      </tr>
+  </table>
+  <h2>Гілки</h2>
+
+<table border="1">
+    <tr>
+        <th>Команда</th>
+        <th>Опис</th>
+    </tr>
+    <tr>
+        <td><code>$ git branch [назва-гілки]</code></td>
+        <td>Створює нову гілку</td>
+    </tr>
+    <tr>
+        <td><code>$ git switch -c [назва-гілки]</code></td>
+        <td>Переходить на вказану гілку і оновлює робочу директорію</td>
+    </tr>
+    <tr>
+        <td><code>$ git merge [назва-гілки]</code></td>
+        <td>Поєднує історію вказаної гілки з поточною. На GitHub операція інколи потребує запиту (pull request)</td>
+    </tr>
+    <tr>
+        <td><code>$ git branch -d [назва-гілки]</code></td>
+        <td>Видаляє вказану гілку</td>
+    </tr>
+</table>
+
+<h2>Створення репозиторіїв</h2>
+
+<table border="1">
+    <tr>
+        <th>Команда</th>
+        <th>Опис</th>
+    </tr>
+    <tr>
+        <td><code>$ git init</code></td>
+        <td>Після виклику git init, створює посилання з локального репозиторію на пустий репозиторій на GitHub</td>
+    </tr>
+    <tr>
+        <td><code>$ git remote add origin [посилання]</code></td>
+        <td>Перетворює існуючу директорію на репозиторій Git</td>
+    </tr>
+    <tr>
+        <td><code>$ git clone [посилання]</code></td>
+        <td>Клонує (завантажує) існуючий репозиторій з GitHub, з усіма файлами, гілками і комітами</td>
+    </tr>
+</table>
+
+<h2>Файл .gitignore</h2>
+
+<table border="1">
+    <tr>
+        <th>Команда</th>
+        <th>Опис</th>
+    </tr>
+    <tr>
+        <td colspan="2">Інколи з репозиторію Git варто виключити деякі файли. Це можна зробити, створивши спеціальний файл під назвою .gitignore. Корисні шаблони для .gitignore файлів можна знайти на github.com/github/gitignore.</td>
+    </tr>
+</table>
+
+<h2>Синхронізація змін</h2>
+
+<table border="1">
+    <tr>
+        <th>Команда</th>
+        <th>Опис</th>
+    </tr>
+    <tr>
+        <td><code>$ git fetch</code></td>
+        <td>Завантажує всю історію з віддалених гілок</td>
+    </tr>
+    <tr>
+        <td><code>$ git merge</code></td>
+        <td>Поєднує віддалені гілки з поточною локальною гілкою</td>
+    </tr>
+    <tr>
+        <td><code>$ git push</code></td>
+        <td>Завантажує всі локальні зміни в гілках на GitHub</td>
+    </tr>
+    <tr>
+        <td><code>$ git pull</code></td>
+        <td>Оновлює локальну поточну гілку новими комітами з відповідної віддаленої гілки. git pull — це поєднання git fetch та git merge</td>
+    </tr>
+</table>
+
+<h2>Внесення змін</h2>
+
+<table border="1">
+    <tr>
+        <th>Команда</th>
+        <th>Опис</th>
+    </tr>
+    <tr>
+        <td><code>$ git log</code></td>
+        <td>Виводить історію версії поточної гілки</td>
+    </tr>
+    <tr>
+        <td><code>$ git log --follow [назва файлу]</code></td>
+        <td>Виводить історію версії вказаного файлу, включно з перейменуваннями</td>
+    </tr>
+    <tr>
+        <td><code>$ git diff [перша-гілка]...[друга-гілка]</code></td>
+        <td>Виводить різницю між двома гілками</td>
+    </tr>
+    <tr>
+        <td><code>$ git show [коміт]</code></td>
+        <td>Виводить метадані та зміни вказаного коміту</td>
+    </tr>
+    <tr>
+        <td><code>$ git add [назва файлу]</code></td>
+        <td>Зберігає зміни в файлі, готуючись до створення коміту</td>
+    </tr>
+    <tr>
+        <td><code>$ git commit -m "[повідомлення з описом]"</code></td>
+        <td>Записує зміни в файлі в історію версій, створюючи новий коміт</td>
+    </tr>
+</table>
+
+<h2>Відновлення комітів</h2>
+
+<table border="1">
+    <tr>
+        <th>Команда</th>
+        <th>Опис</th>
+    </tr>
+    <tr>
+        <td><code>$ git reset [коміт]</code></td>
+        <td>Відміняє всі коміти після вказаного, зберігаючи зміни локально</td>
+    </tr>
+    <tr>
+        <td><code>$ git reset --hard [коміт]</code></td>
+        <td>Видаляє всю історію і повертається до вказаного коміту</td>
+    </tr>
+    <tr>
+        <td colspan="2">ОБЕРЕЖНО! Зміни в історії можуть мати кепські наслідки. Якщо вам треба змінити коміти, що існують на GitHub (віддалено), дійте обережно. Якщо вам потрібна допомога, звертайтесь до github.community або до підтримки.</td>
+    </tr>
+</table>
+
+
+  <footer>
     <p>&copy; Всі права захищені, 2024</p>
     <p>Розробник: курсант 212 навчальної групи Сисуєв Я.</p>
   </footer>
