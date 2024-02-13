@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Моя улюблена книга</title>
+  <title>Команди git</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,43 +15,131 @@
       <a href="register.html">Реєстрація</a>
     </div>
   </header>
+  <h1>Git Commands Reference</h1>
   <table>
-    <thead>
-      <tr>
-        <th>Команда</th>
-        <th>Опис</th>
-        <th>Приклад</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>git init</td>
-        <td>Створити новий репозиторій Git</td>
-        <td>git init my-project</td>
-      </tr>
-      <tr>
-        <td>git clone</td>
-        <td>Скопіювати репозиторій з GitHub</td>
-        <td>git clone https://github.com/user/repo.git</td>
-      </tr>
-      <tr>
-        <td>git add</td>
-        <td>Додати файли до індексу Git</td>
-        <td>git add index.html style.css</td>
-      </tr>
-      <tr>
-        <td>git commit</td>
-        <td>Зберегти зміни в локальному репозиторію</td>
-        <td>git commit -m "Додано нову сторінку"</td>
-      </tr>
-      <tr>
-        <td>git push</td>
-        <td>Відправити зміни на GitHub</td>
-        <td>git push origin master</td>
-      </tr>
-    </tbody>
-  </table>
-    <footer>
+      <thead>
+          <tr>
+              <th>Task</th>
+              <th>Command</th>
+              <th>Description</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td rowspan="2">Create a Repository</td>
+              <td>$ git init [project name]</td>
+              <td>Create a new local repository.</td>
+          </tr>
+          <tr>
+              <td>$ git clone my_url</td>
+              <td>Download from an existing repository.</td>
+          </tr>
+          <tr>
+              <td rowspan="5">Observe your Repository</td>
+              <td>$ git status</td>
+              <td>List new or modified files not yet committed.</td>
+          </tr>
+          <tr>
+              <td>$ git diff</td>
+              <td>Show the changes to files not yet staged.</td>
+          </tr>
+          <tr>
+              <td>$ git diff --cached</td>
+              <td>Show the changes to staged files.</td>
+          </tr>
+          <tr>
+              <td>$ git diff HEAD</td>
+              <td>Show all staged and unstaged file changes.</td>
+          </tr>
+          <tr>
+              <td>$ git diff commit1 commit2</td>
+              <td>Show the changes between two commit IDs.</td>
+          </tr>
+          <tr>
+              <td rowspan="2">Working with Branches</td>
+              <td>$ git branch</td>
+              <td>List all local branches.</td>
+          </tr>
+          <tr>
+              <td>$ git branch -av</td>
+              <td>List all branches, local and remote.</td>
+          </tr>
+          <tr>
+              <td rowspan="4"></td>
+              <td>$ git checkout my_branch</td>
+              <td>Switch to a branch and update working directory.</td>
+          </tr>
+          <tr>
+              <td>$ git branch new_branch</td>
+              <td>Create a new branch.</td>
+          </tr>
+          <tr>
+              <td>$ git branch -d my_branch</td>
+              <td>Delete a branch.</td>
+          </tr>
+          <tr>
+              <td>$ git checkout branch_b; git merge branch_a</td>
+              <td>Merge branch a into branch_b.</td>
+          </tr>
+          <tr>
+              <td>Tag</td>
+              <td>$ git tag my_tag</td>
+              <td>Tag the current commit.</td>
+          </tr>
+          <tr>
+              <td rowspan="5">Make a Change</td>
+              <td>$ git add [file]</td>
+              <td>Stage the file, ready for commit.</td>
+          </tr>
+          <tr>
+              <td>$ git add .</td>
+              <td>Stage all changed files, ready for commit.</td>
+          </tr>
+          <tr>
+              <td>$ git commit -m "commit message"</td>
+              <td>Commit all staged files to versioned history.</td>
+          </tr>
+          <tr>
+              <td>$ git commit -am "commit message"</td>
+              <td>Commit all your tracked files to versioned history.</td>
+          </tr>
+          <tr>
+              <td>$ git reset [file]</td>
+              <td>Unstage file, keeping the file changes.</td>
+          </tr>
+          <tr>
+              <td>Revert</td>
+              <td>$ git reset --hard</td>
+              <td>Revert everything to the last commit.</td>
+          </tr>
+          <tr>
+              <td rowspan="4">Synchronize</td>
+              <td>$ git fetch</td>
+              <td>Get the latest changes from origin (no merge).</td>
+          </tr>
+          <tr>
+              <td>$ git pull</td>
+              <td>Fetch the latest changes from origin and merge.</td>
+          </tr>
+          <tr>
+              <td>$ git pull --rebase</td>
+              <td>Fetch the latest changes from origin and rebase.</td>
+          </tr>
+          <tr>
+              <td>$ git push</td>
+              <td>Push local changes to the origin.</td>
+          </tr>
+          <tr>
+              <td>Help</td>
+              <td>$ git command --help</td>
+              <td>Get help on a specific command.</td>
+          </tr>
+          <tr>
+              <td>More Resources</td>
+              <td colspan="2">https://training.github.com/</td>
+          </tr>
+      </tbody>
+  </table>    <footer>
     <p>&copy; Всі права захищені, 2024</p>
     <p>Розробник: курсант 212 навчальної групи Сисуєв Я.</p>
   </footer>
